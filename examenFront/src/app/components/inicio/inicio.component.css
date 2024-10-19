@@ -1,6 +1,18 @@
 .container{
     margin-top:3rem;
 }
+
+
 .seccion1{
     margin-top: 2rem;
+}
+
+.icon{
+    margin-left: 1rem;
+}
+.imagen{
+    align-items: center;
+}
+i,h3, th{
+    color: rgb(82, 106, 172);
 }
