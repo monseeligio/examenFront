@@ -1,0 +1,68 @@
+<app-navbar></app-navbar>
+<body>
+    <div class="container">
+        <header>
+            Monserrat Eligio Ramos<br>
+            Ingeniera en Sistemas Computacionales con especialización en servicios
+            web en la Industria 4.0. Con solidad formación académica y habilidades
+            técnicas, busco aplicar y expandir mis conocimientos en un entorno
+            laboral dinámico.  
+        </header>
+        <section class="seccion1">
+            <h3>Gustos e interesen de Monserrat</h3>
+            <p>Tengo infinida de gustos e intereses pero me gustaria clasificarlos por ambitos:<br>
+                <strong>Profesional:</strong> me gusta mucho la programacion , sin embargo mi gusto preferente es el frontend aunuqe me gustari ser fullstack<br>
+                <strong>Personal:</strong> me gusta mucho ver novelas con mucho drama, ciclismo, conocer nuevos lugares y pasar tiempo con mi familia
+            
+            </p>
+
+            <div class="container table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Email</th>
+                        <th>User name</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of datos; let i=index">
+                            <td>{{item.name.first}}</td>
+                            <td>{{item.name.last}}</td>
+                            <td>{{item.email}}</td>
+                            <td>{{item.login.username}}</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+            <div class="container mt-5">
+                <h2 class="text-center">Contáctanos</h2>
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre completo">
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Asunto de tu mensaje">
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                  </div>
+              
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+              
+        </section>
+    </div>
+</body>
